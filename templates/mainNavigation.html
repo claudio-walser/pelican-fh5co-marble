@@ -1,0 +1,23 @@
+<ul>
+    <!-- home link -->
+    <li {% if page_name == "index" %}class="fh5co-active"{% endif %}><a href="/">Home</a></li>
+
+
+    <!-- page links -->
+    {% if DISPLAY_PAGES_ON_MENU %}
+        {% for page in pages %}
+            <li {% if output_file == page.url %}class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+    {% endif %}
+
+    <!-- articles -->
+    {% if articles %}
+        {% for article in articles %}        
+            {% if loop.index == 1 %}
+                {% for category, articles in categories %}
+                    <li>{{ category }}</li>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</ul>

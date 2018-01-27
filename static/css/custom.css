@@ -1,0 +1,30 @@
+/* pages overview */
+.overview-link .wrapper .fh5co-feature {
+    margin-bottom: 10px;
+}
+
+.overview-link .wrapper {
+    background: whitesmoke;
+    padding: 20px;
+    margin-bottom: 30px;
+    display:block;
+}
+
+.overview-link:hover .wrapper {
+    background: #fff;
+}
+
+.overview-link .wrapper h3 {
+    margin-top: 10px;
+}
+
+.overview-link p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* pages overview */
