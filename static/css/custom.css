@@ -1,3 +1,9 @@
+/* about */
+.about-image {
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
 /* pages overview */
 .overview-link .wrapper .fh5co-feature {
     margin-bottom: 10px;

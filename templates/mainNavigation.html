@@ -4,7 +4,7 @@
 
     <!-- page links -->
     {% if DISPLAY_PAGES_ON_MENU %}
-        {% for page in pages|sort(attribute='order') %}
+        {% for page in pages %}
             <li{% if output_file == page.url %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
     {% endif %}
