@@ -1,48 +1,31 @@
+{% if HERO|length > 0 %}
 <aside id="fh5co-hero" class="js-fullheight">
     <div class="flexslider js-fullheight">
         <ul class="slides">
-        <li style="background-image: url(/theme/images/img_bg_1.jpg);">
-            <div class="overlay"></div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-                        <div class="slider-text-inner">
-                            <h1>Intuitive <strong></strong> is How Give We the User New Superpowers</h1>
-                            <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                <p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
+
+            {% for hero in HERO %}
+                <li style="background-image: url({{ hero.image }});">
+                    <div class="overlay"></div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>{{ hero.title }}</h1>
+                                    <h2>{{ hero.text }}</h2>
+                                        <p>
+                                            {% for link in hero.links %}
+                                                <a class="btn btn-primary" href="{{ link.url }}">
+                                                    <i class="{{ link.icon }}"></i> {{ link.text }}
+                                                </a>
+                                            {% endfor %}
+                                        </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </li>
-        <li style="background-image: url(/theme/images/img_bg_2.jpg);">
-            <div class="overlay"></div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-                        <div class="slider-text-inner">
-                            <h1>We are Happy to Create Newest Modern Websites</h1>
-                                <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                <p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li style="background-image: url(/theme/images/img_bg_3.jpg);">
-            <div class="overlay"></div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-                        <div class="slider-text-inner">
-                            <h1>Download our Free HTML5 Bootstrap Template</h1>
-                                <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-                                <p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </aside>
+{% endif %}

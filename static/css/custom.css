@@ -34,3 +34,11 @@
 
 
 /* pages overview */
+
+
+/* some fixes */
+@media screen and (max-width: 768px) {
+    #fh5co-hero .flexslider .slider-text {
+       width: 100%;
+    }
+}
