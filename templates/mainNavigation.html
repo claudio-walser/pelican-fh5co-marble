@@ -1,23 +1,40 @@
 <ul>
     <!-- home link -->
-    <li {% if page_name == "index" %}class="fh5co-active"{% endif %}><a href="/">Home</a></li>
-
+    <li{% if page_name == "index" %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/">Home</a></li>
 
     <!-- page links -->
     {% if DISPLAY_PAGES_ON_MENU %}
-        {% for page in pages %}
-            <li {% if output_file == page.url %}class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+        {% for page in pages|sort(attribute='order') %}
+            <li{% if output_file == page.url %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
         {% endfor %}
     {% endif %}
 
-    <!-- articles -->
-    {% if articles %}
-        {% for article in articles %}        
-            {% if loop.index == 1 %}
-                {% for category, articles in categories %}
-                    <li>{{ category }}</li>
-                {% endfor %}
-            {% endif %}
+    <!-- categories -->
+    {% if DISPLAY_CATEGORIES_ON_MENU and categories|length > 0 %}
+        <li class="nav-title">Categories</li>
+        {% for cat, null in categories|sort %}
+            <li{% if cat == category %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+        {% endfor %}
+    {% elif categories|length > 0 %}
+        <li{% if page_name == 'categories' %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
+    {% endif %}
+
+    <!-- tags -->
+    {% if DISPLAY_TAGS_ON_MENU and tags|length > 0 %}
+        <li class="nav-title">Tags</li>
+        {% for tag, null in tags|sort %}
+            <li{% if output_file == tag.url %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a></li>
+        {% endfor %}
+    {% elif tags|length > 0 %}
+        <li{% if page_name == 'tags' %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
+    {% endif %}
+
+    <!-- additional menu items from config -->
+    {% if MENUITEMS %}
+        <li class="nav-title">Misc</li>
+        {% for item in MENUITEMS %}
+            <li{% if output_file == item.1 %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ item.1 }}">{{ item.0 }}</a></li>
         {% endfor %}
     {% endif %}
+
 </ul>

@@ -5,4 +5,7 @@ Additional Config Parameters
 
 Additional Page Options
 - icon
-- lead
+- order (for the right order in the navigation and page overwie on the home page)
+  
+Additional Article Option
+- image

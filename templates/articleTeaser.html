@@ -1,0 +1,13 @@
+<div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
+    <div class="blog-entry">
+        {% if article.image is defined %}
+            <a href="{{ SITEURL }}/{{ article.url }}" class="blog-img"><img src="{{ article.image }}" class="img-responsive" alt="{{ article.title }}"></a>
+        {% endif %}
+        <div class="desc">
+            <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+            <span><small>by  {{ article.author }}</small> / <small>{{ article.category }}</small></span>
+            <p>{{ article.summary }}</p>
+            <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-primary">Read More <i class="icon-arrow-right3"></i></a>
+        </div>
+    </div>
+</div>

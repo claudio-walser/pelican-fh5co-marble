@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Tags{% endblock %}
+{% block content %}
+    <div class="fh5co-narrow-content">
+        <h1 class="fh5co-heading-colored"><i class="icon-tags"></i> Tags</h1>
+        <div class="animate-box" data-animate-effect="fadeInLeft">
+            {% for tag, articles in tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}" class="overview-link col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="wrapper">
+                        <div class="fh5co-feature">
+                            <div class="fh5co-icon">
+                                <i class="icon-tag3"></i>
+                            </div>
+                            <div class="fh5co-text">
+                                <h3>#{{ tag }}</h3>
+                                <p>{{ articles|length }} articles</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

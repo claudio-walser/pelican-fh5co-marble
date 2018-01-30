@@ -2,8 +2,8 @@
     <div class="fh5co-narrow-content">
         <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Pages Overview</h2>
         <div class="row">
-            {% for page in pages %}
-                <a href="{{ page.url }}" class="overview-link col-md-6 animate-box" data-animate-effect="fadeInLeft">
+            {% for page in pages|sort(attribute='order') %}
+                <a href="{{ SITEURL }}/{{ page.url }}" class="overview-link col-md-6 animate-box" data-animate-effect="fadeInLeft">
                     <div class="wrapper">
                         <div class="fh5co-feature">
                             <div class="fh5co-icon">
@@ -11,7 +11,7 @@
                             </div>
                             <div class="fh5co-text">
                                 <h3>{{ page.title }}</h3>
-                                <p>{{ page.lead }}</p>
+                                <p>{{ page.summary }}</p>
                             </div>
                         </div>
                         <div class="clearfix"></div>

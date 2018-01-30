@@ -1,8 +1,29 @@
 <ul id="social">
-    <li><a href="#"><i class="icon-facebook2"></i></a></li>
-    <li><a href="#"><i class="icon-twitter2"></i></a></li>
-    <li><a href="#"><i class="icon-instagram"></i></a></li>
-    <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-    <li><a href="#"><i class="icon-github"></i></a></li>
-    <li><a href="#"><i class="icon-google-plus2"></i></a></li>
+    {% for social in SOCIAL %}
+        {% if 'github' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-github"></i></a></li>
+
+        {% elif 'twitter' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-twitter2"></i></a></li>
+
+        {% elif 'google' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-google-plus2"></i></a></li>
+
+        {% elif 'facebook' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-facebook2"></i></a></li>
+
+        {% elif 'instagram' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-instagram"></i></a></li>
+
+        {% elif 'linkedin' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-linkedin2"></i></a></li>
+
+        {% elif 'readthedocs' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-document"></i></a></li>
+
+        {% elif 'travis-ci' in social.1%}
+            <li><a href="{{ social.1 }}" alt="{{ social.0 }}"><i class="icon-spanner"></i></a></li>
+
+        {% endif %}
+    {% endfor %}
 </ul>

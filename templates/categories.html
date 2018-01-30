@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Categories{% endblock %}
+{% block content %}
+    <div class="fh5co-narrow-content">
+        <h1 class="fh5co-heading-colored"><i class="icon-folder"></i> Categories</h1>
+        <div class="animate-box" data-animate-effect="fadeInLeft">
+            {% for category, articles in categories %}
+                <a href="{{ SITEURL }}/{{ category.url }}" class="overview-link col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                    <div class="wrapper">
+                        <div class="fh5co-feature">
+                            <div class="fh5co-icon">
+                                <i class="icon-folder"></i>
+                            </div>
+                            <div class="fh5co-text">
+                                <h3>{{ category }}</h3>
+                                <p>{{ articles|length }} articles</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
