@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 
 {% block title %}{{ article.title }}{% endblock %}
+{% block meta %}
+    <meta name="author" content="{{ article.author.name }}" />
+    <meta name="description" content="{{ article.summary|striptags }}" />
+    <meta name="keywords" content="{{ article.tags|join(', ') }}">
+    {% include "partial/og_tags.html" %}
+{% endblock %}
+
 {% block content %}
 
     <div class="fh5co-narrow-content">

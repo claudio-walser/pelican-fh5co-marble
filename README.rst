@@ -14,3 +14,15 @@ Additional Page Options
 
 Additional Article Option
 - image
+
+
+TODO
+- pagination
+- meta header
+- archives page
+- rss feeds
+- comments
+- search
+- form
+- internationalization
+- code highlighting

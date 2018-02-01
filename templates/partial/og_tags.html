@@ -1,0 +1,18 @@
+<!-- Facebook and Twitter integration -->
+<meta property="og:site_name" content="{{ SITENAME }}"/>
+<meta property="og:title" content="{{ article.title|striptags }}"/>ss
+<meta property="og:description" content="{{ article.summary|striptags }}"/>
+<meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="{{ article.date }}"/>
+<meta property="article:modified_time" content="{{ article.modified }}"/>
+<meta property="article:author" content="{{ SITEURL }}/{{ article.author.url }}">
+<meta property="article:section" content="{{ article.category.name }}"/>
+{% for tag in article.tags %}
+    <meta property="article:tag" content="{{ tag.name }}"/>
+{% endfor %}
+{% if article.image is defined %}
+    <meta property="og:image" content="{{ SITEURL }}/{{ article.image }}">
+{% elif LOGO %}
+    <meta property="og:image" content="{{ LOGO }}">
+{% endif %}
