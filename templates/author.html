@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - {{ author }}{% endblock %}
+{% block meta %}
+    <meta name="description" content="{{ SITENAME }} - Authors" />
+{% endblock %}
+
+{% block content %}
+    <div class="fh5co-narrow-content">
+        <h1 class="fh5co-heading-colored">{{ author }}</h1>
+
+        <div class="animate-box" data-animate-effect="fadeInLeft">
+          {% for article in articles %}
+            {% include 'articleTeaser.html' %}
+          {% endfor %}
+          }
+        </div>
+    </div>
+{% endblock %}

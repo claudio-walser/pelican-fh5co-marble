@@ -39,6 +39,14 @@
     <!--[if lt IE 9]>
     <script src="/theme/js/respond.min.js"></script>
     <![endif]-->
+    {% if FEED_ALL_ATOM %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom">
+    {% endif %}
+
+    {% if FEED_ALL_RSS %}
+        <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS">
+    {% endif %}
+
 
     </head>
     <body>

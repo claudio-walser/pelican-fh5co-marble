@@ -18,9 +18,7 @@ Additional Article Option
 
 TODO
 - pagination
-- meta header
 - archives page
-- rss feeds
 - comments
 - search
 - form
