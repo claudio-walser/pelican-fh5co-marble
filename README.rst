@@ -23,4 +23,3 @@ TODO
 - search
 - form
 - internationalization
-- code highlighting
