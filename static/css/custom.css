@@ -42,3 +42,56 @@
        width: 100%;
     }
 }
+
+/* search and form */
+.search-field {
+    width: 230px;
+    background: white;
+
+}
+
+.search-submit {
+    font-size: 25px !important;
+    color: white !important;
+    border-radius: 6px;
+    height: 54px;
+    margin-top: -2px;
+}
+
+.search-submit:after, .search-submit:hover:after {
+    visibility: hidden !important;
+}
+
+.form-loading {
+    background: whitesmoke;
+    opacity: 0.5;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    display: none;
+}
+
+.form-success {
+  color: #3c763d !important;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: none;
+  font-size: 18px;
+}
+
+.form-error {
+  color: #a94442 !important;
+  padding: 5px;
+  padding-left: 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: none;
+  font-size: 18px;
+}
+
+.error {
+  border: 2px solid #990000 !important;
+}

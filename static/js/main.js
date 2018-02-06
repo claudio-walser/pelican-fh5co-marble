@@ -145,6 +145,51 @@
 
 	};
 
+
+	var handleForm = function() {
+		$("#contact-form").on("submit", function() {
+			$(".form-loading").show();
+			jQuery.post("theme/send-form.php", {
+				name: $("#name").val(),
+				lastname: $("#lastname").val(),
+				email: $("#email").val(),
+				phone: $("#phone").val(),
+				message: $("#message").val()
+			}).done(function(data) {
+				data = $.parseJSON(data);
+				var firstErrorElement = false;
+				$.each(data.fields, function(index, value) {
+					var el = $("#" + index);
+					if (value != 'ok') {
+						if (el) {
+							if (firstErrorElement == false) {
+								firstErrorElement = true;
+								el.focus();
+								$(".form-error").slideDown(400).delay(3000).slideUp(400);
+							}
+							el.addClass('error');
+						}
+					} else {
+						el.removeClass('error');
+					}
+				});
+				if (data.sent == 'ok') {
+					$(".form-success").slideDown(400).delay(3000).slideUp(400);
+					$("#name").val('');
+					$("#lastname").val('');
+					$("#email").val('');
+					$("#phone").val('');
+					$("#message").val('');
+				}
+				$(".form-loading").hide();
+			}).fail(function(xhr, textStatus, errorThrown) {
+		        alert(xhr.responseText);
+		    });
+
+			return false;
+		});
+	};
+
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -152,6 +197,7 @@
 		burgerMenu();
 		mobileMenuOutsideClick();
 		sliderMain();
+		handleForm();
 	});
 
 

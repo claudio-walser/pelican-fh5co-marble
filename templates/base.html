@@ -34,6 +34,8 @@
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/custom.css">
     <!-- pygments code highlight -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css">
+    <!-- tipue search -->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/css/tipuesearch.css">
 
     <!-- Modernizr JS -->
     <script src="{{ SITEURL }}/theme/js/modernizr-2.6.2.min.js"></script>
@@ -62,6 +64,9 @@
             </h1>
             <nav id="fh5co-main-menu" role="navigation">
                 {% include 'partial/mainNavigation.html' %}
+                {% if 'tipue_search' in PLUGINS %}
+                    {% include 'partial/search.html' %}
+                {% endif %}
             </nav>
 
             {% include 'partial/social.html' %}
@@ -89,10 +94,27 @@
     <!-- Flexslider -->
     <script src="{{ SITEURL }}/theme/js/jquery.flexslider-min.js"></script>
 
+    <!-- tipue search -->
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+    <script src="{{ SITEURL }}/theme/js/google_map.js"></script>
+
 
     <!-- MAIN JS -->
     <script src="{{ SITEURL }}/theme/js/main.js"></script>
 
+
+<script>
+jQuery(document).ready(function() {
+     jQuery('#tipue_search_input').tipuesearch({
+         'show': 10,
+         'mode': 'json',
+         'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
+     });
+});
+</script>
     </body>
 </html>
 

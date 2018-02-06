@@ -11,4 +11,8 @@
         </div>
     </div>
 
+    {% if DISQUS_ON_PAGES or page.use_disqus %}
+        {% include 'partial/disqus.html' %}
+    {% endif %}
+
 {% endblock %}

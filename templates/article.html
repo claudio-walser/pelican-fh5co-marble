@@ -14,14 +14,13 @@
         <h1 class="fh5co-heading-colored">{{ article.title }}</h1>
 
         <div>by
-            {% if article.authors %}
             {% for author in article.authors %}
                 <a href="{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %} - {{ article.locale_date }}
         </div>
 
         {% if article.tags %}
-            <div><span>Tags : </span>
+            <div><span>Tags: </span>
                 {% for tag in article.tags %}
                     <span><a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a> </span>
                 {% endfor %}
@@ -32,5 +31,7 @@
             <p class="animate-box" data-animate-effect="fadeInLeft">{{ article.content }}</p>
         </div>
     </div>
+
+    {% include 'partial/disqus.html' %}
 
 {% endblock %}
