@@ -4,7 +4,7 @@
         <div class="fh5co-narrow-content">
             <div class="row">
                 <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-                    <h1 class="fh5co-heading-colored">Get in touch</h1>
+                    <h1 class="fh5co-heading-colored">{{ _('Get in touch') }}</h1>
                 </div>
             </div>
             <div class="row">
@@ -30,47 +30,13 @@
                                     <p>{{ ABOUT.text }}</p>
                                 {% endif %}
                                 {% if 'link' in ABOUT %}
-                                    <p><a href="{{ SITEURL }}/{{ ABOUT.link }}" class="btn btn-primary">Contact me</a></p>
+                                    <p><a href="{{ SITEURL }}/{{ ABOUT.link }}" class="btn btn-primary">{{ _('Contact me') }}</a></p>
                                 {% endif %}
 
                             </div>
                         </div>
                 </div>
             </div>
-
-
-
-
-
-            <!--
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    {% for item in ABOUT %}
-                        {% if item.0 == 'text' %}
-                            <p class="fh5co-lead">{{ item.1 }}</p>
-                        {% endif %}
-
-                        {% if item.0 == 'link' %}
-                            <p><a href="{{ item.1 }}" class="btn btn-primary">Contact me</a></p>
-                        {% endif %}
-
-                        {% if item.0 == 'mail' %}
-                            <div class="wrapper">
-                                <div class="fh5co-feature">
-                                    <div class="fh5co-icon">
-                                        <i class="icon-mail"></i>
-                                    </div>
-
-                                    <div class="fh5co-text">
-
-                                        <a href="mailto:{{ item.1 }}">{{ item.1 }}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </div> -->
         </div>
     </div>
 {% endif %}

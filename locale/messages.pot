@@ -1,0 +1,63 @@
+# Translations template for Marble Theme.
+# Copyright (C) 2018 Claudio Walser
+# This file is distributed under the same license as the Marble Theme project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Marble Theme 0.1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-02-06 18:27+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: templates/authors.html:5 templates/authors.html:10
+msgid "Authors"
+msgstr ""
+
+#: templates/categories.html:2 templates/categories.html:5
+#: templates/partial/mainNavigation.html:14
+#: templates/partial/mainNavigation.html:19
+msgid "Categories"
+msgstr ""
+
+#: templates/partial/mainNavigation.html:24
+#: templates/partial/mainNavigation.html:29 templates/tags.html:2
+#: templates/tags.html:5
+msgid "Tags"
+msgstr ""
+
+#: templates/partial/about.html:7
+msgid "Get in touch"
+msgstr ""
+
+#: templates/partial/about.html:33
+msgid "Contact me"
+msgstr ""
+
+#: templates/partial/articleTeaser.html:10
+msgid "Read more"
+msgstr ""
+
+#: templates/partial/latest.html:2
+msgid "Recent articles"
+msgstr ""
+
+#: templates/partial/mainNavigation.html:3
+msgid "Home"
+msgstr ""
+
+#: templates/partial/mainNavigation.html:34
+msgid "Misc"
+msgstr ""
+
+#: templates/partial/pages.html:3
+msgid "Pages overview"
+msgstr ""
+

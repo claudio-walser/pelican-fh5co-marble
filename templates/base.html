@@ -67,6 +67,7 @@
                 {% if 'tipue_search' in PLUGINS %}
                     {% include 'partial/search.html' %}
                 {% endif %}
+
             </nav>
 
             {% include 'partial/social.html' %}
@@ -107,13 +108,13 @@
 
 
 <script>
-jQuery(document).ready(function() {
-     jQuery('#tipue_search_input').tipuesearch({
-         'show': 10,
-         'mode': 'json',
-         'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
-     });
-});
+    jQuery(document).ready(function() {
+         jQuery('#tipue_search_input').tipuesearch({
+             'show': 10,
+             'mode': 'json',
+             'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
+         });
+    });
 </script>
     </body>
 </html>

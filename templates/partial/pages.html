@@ -1,6 +1,6 @@
 {% if DISPLAY_PAGES_ON_HOME %}
     <div class="fh5co-narrow-content">
-        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Pages Overview</h2>
+        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">{{ _('Pages overview') }}</h2>
         <div class="row">
             {% for page in pages|sort(attribute='order') %}
                 <a href="{{ SITEURL }}/{{ page.url }}" class="overview-link col-md-6 animate-box" data-animate-effect="fadeInLeft">
