@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ SITENAME }} - Contact{% endblock %}
+{% block title %}{{ SITENAME }} - {{ _('Contact') }}{% endblock %}
 {% block meta %}
     <meta name="description" content="{{ SITENAME }} - Contact" />
 {% endblock %}
@@ -46,7 +46,7 @@
         
         <div class="row">
           <div class="col-md-4">
-            <h2>Get In Touch</h2>
+            <h2>{{ _('Get in touch') }}</h2>
           </div>
         </div>
         <div class="form-loading"></div>
@@ -56,21 +56,21 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" id="name" class="form-control" placeholder="Name">
+                    <input type="text" id="name" class="form-control" placeholder="{{ _('Name') }}">
                   </div>
                   <div class="form-group">
-                    <input type="text" id="email" class="form-control" placeholder="Email">
+                    <input type="text" id="email" class="form-control" placeholder="{{ _('Email') }}">
                   </div>
                   <div class="form-group">
-                    <input type="text" id="phone" class="form-control" placeholder="Phone">
+                    <input type="text" id="phone" class="form-control" placeholder="{{ _('Phone') }}">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                    <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="{{ _('Message') }}"></textarea>
                   </div>
                   <div class="form-group">
-                    <input type="submit" class="btn btn-primary btn-md" value="Send Message">
+                    <input type="submit" class="btn btn-primary btn-md" value="{{ _('Send') }}">
                   </div>
                 </div>
                 
@@ -78,8 +78,8 @@
             </div>
             
           </div>
-          <div class="form-error alert-danger">Please fix the issues, all inputs are mandatory.</div>
-          <div class="form-success alert-success">Thank you for your message, we will respond as soon as possible.</div>
+          <div class="form-error alert-danger">{{ _('Please fix the issues, all inputs are mandatory.') }}</div>
+          <div class="form-success alert-success">{{ _('Thank you for your message, we will respond as soon as possible.') }}</div>
         </form>
       </div>
       <div id="map"></div>
