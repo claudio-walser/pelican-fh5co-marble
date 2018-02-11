@@ -100,12 +100,8 @@
     <!-- Flexslider -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.flexslider-min.js"></script>
 
-    <!-- tipue search -->
-    <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch_set.js"></script>
-    <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.js"></script>
+    {% block custom_js %}{% endblock %}
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/google_map.js"></script>
 
 
     <!-- MAIN JS -->

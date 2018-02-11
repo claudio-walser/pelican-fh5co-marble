@@ -149,7 +149,7 @@
 	var handleForm = function() {
 		$("#contact-form").on("submit", function() {
 			$(".form-loading").show();
-			jQuery.post("theme/send-form.php", {
+			jQuery.post("/theme/send-form.php", {
 				name: $("#name").val(),
 				lastname: $("#lastname").val(),
 				email: $("#email").val(),
@@ -180,10 +180,13 @@
 					$("#email").val('');
 					$("#phone").val('');
 					$("#message").val('');
+				} else {
+					$(".form-error").slideDown(400).delay(3000).slideUp(400);
 				}
 				$(".form-loading").hide();
 			}).fail(function(xhr, textStatus, errorThrown) {
-		        alert(xhr.responseText);
+		        $(".form-error").slideDown(400).delay(3000).slideUp(400);
+		        $(".form-loading").hide();
 		    });
 
 			return false;

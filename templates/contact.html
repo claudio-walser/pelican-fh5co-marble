@@ -6,44 +6,60 @@
 {% endblock %}
 
 {% block content %}
+
       <div class="fh5co-more-contact">
         <div class="fh5co-narrow-content">
           <div class="row">
-            <div class="col-md-4">
-              <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
-                <div class="fh5co-icon">
-                  <i class="icon-globe"></i>
-                </div>
-                <div class="fh5co-text">
-                  <p><a href="#">info@domain.com</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
-                <div class="fh5co-icon">
-                  <i class="icon-map"></i>
-                </div>
-                <div class="fh5co-text">
-                  <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+
+            {% if 'mail' in ABOUT %}
+              <div class="col-md-4">
+                <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                  <div class="fh5co-icon">
+                      {% if 'image' in ABOUT %}
+                        <img class="about-image" src="{{ ABOUT.image }}" />
+                      {% else %}
+                        <i class="icon-globe"></i>
+                      {% endif %}
+                  </div>
+                  <div class="fh5co-text">
+                    <p><a href="mailto:{{ ABOUT.mail }}">{{ ABOUT.mail }}</a></p>
+                  </div>
                 </div>
               </div>
-            </div>
+            {% endif %}
+
+            {% if 'address' in ABOUT %}
+              <div class="col-md-4">
+                <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
+                  <div class="fh5co-icon">
+                    <i class="icon-world2"></i>
+                  </div>
+                  <div class="fh5co-text">
+                    <p>{{ ABOUT.address }}</p>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if 'phone' in ABOUT %}
             <div class="col-md-4">
               <div class="fh5co-feature fh5co-feature-sm animate-box" data-animate-effect="fadeInLeft">
                 <div class="fh5co-icon">
                   <i class="icon-phone"></i>
                 </div>
                 <div class="fh5co-text">
-                  <p><a href="tel://">+123 456 7890</a></p>
+                  <p><a href="tel://">{{ ABOUT.phone }}</a></p>
                 </div>
               </div>
             </div>
+            {% endif %}
+
           </div>
         </div>
       </div>
-      <div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">
-        
+
+
+      <div class="fh5co-narrow-content animate-box" data-animate-effect="fadeInLeft">  
         <div class="row">
           <div class="col-md-4">
             <h2>{{ _('Get in touch') }}</h2>
@@ -57,6 +73,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <input type="text" id="name" class="form-control" placeholder="{{ _('Name') }}">
+                    <input type="text" id="lastname" class="form-control" placeholder="{{ _('Lastname') }}">
                   </div>
                   <div class="form-group">
                     <input type="text" id="email" class="form-control" placeholder="{{ _('Email') }}">
@@ -73,16 +90,23 @@
                     <input type="submit" class="btn btn-primary btn-md" value="{{ _('Send') }}">
                   </div>
                 </div>
-                
               </div>
-            </div>
-            
+            </div>  
           </div>
           <div class="form-error alert-danger">{{ _('Please fix the issues, all inputs are mandatory.') }}</div>
           <div class="form-success alert-success">{{ _('Thank you for your message, we will respond as soon as possible.') }}</div>
         </form>
       </div>
-      <div id="map"></div>
 
 
+      {% if 'address' in ABOUT %}
+        <div id="map" data-address="{{ ABOUT.address }}"></div>
+      {% endif %}
+
+
+{% endblock %}
+
+{% block custom_js %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/google_map.js"></script>
 {% endblock %}

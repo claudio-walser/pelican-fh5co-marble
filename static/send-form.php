@@ -27,12 +27,12 @@ function emailIsValid($value) {
 
 function sendForm($data) {
 	$sent = false;
-	$body = "Ein Formular wurde mit den folgenden Angaben versandt.
+	$body = " A form was sent with the following values.
 
 <b>Name:</b><blockquote>" . utf8_decode($data['name']) . "</blockquote>
-<b>E-Mail:</b><blockquote>" . utf8_decode($data['email']) . "</blockquote>
-<b>Telefon:</b><blockquote>" . utf8_decode($data['phone']) . "</blockquote>
-<b>Nachricht:</b><blockquote>" . utf8_decode($data['message']) . "</blockquote>";
+<b>Email:</b><blockquote>" . utf8_decode($data['email']) . "</blockquote>
+<b>Phone:</b><blockquote>" . utf8_decode($data['phone']) . "</blockquote>
+<b>Message:</b><blockquote>" . utf8_decode($data['message']) . "</blockquote>";
 
 	try {
 		$mail = new PHPMailer(true);
@@ -57,8 +57,7 @@ function sendForm($data) {
 
 		$sent = true;
 	} catch (Exception $e) {
-		//print($e->getMessage());
-		//print_r($e->getTraceAsString());
+		$sent = false;
 	}
 	return $sent;
 }

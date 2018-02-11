@@ -23,4 +23,3 @@ TODO
 - pagination (only on index, so its not really needed with only 4 lates articles)
 - archives page
 - form
-- internationalization

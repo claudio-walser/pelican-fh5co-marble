@@ -62,6 +62,7 @@
     visibility: hidden !important;
 }
 
+/* contact form */
 .form-loading {
     background: whitesmoke;
     opacity: 0.5;
@@ -94,6 +95,10 @@
 
 .error {
   border: 2px solid #990000 !important;
+}
+
+#lastname {
+  display: none;
 }
 
 /* laguage navigation */
