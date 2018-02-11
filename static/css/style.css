@@ -14,7 +14,7 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.5);
   background: whitesmoke;
@@ -854,13 +854,6 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
   }
 }
 
-.fh5co-heading {
-  font-size: 18px;
-  margin-bottom: 2em;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
 .fh5co-heading.fh5co-light {
   color: #fff;
 }

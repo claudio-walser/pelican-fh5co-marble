@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }} - {{ _('Archive') }}{% endblock %}
+{% block meta %}
+    <meta name="description" content="{{ SITENAME }} - {{ _('Archive') }}" />
+{% endblock %}
+
+{% block content %}
+    <div class="fh5co-narrow-content">
+        <h1 class="fh5co-heading-colored">{{ _('Archive') }}</h1>
+        <div class="archive">
+            {% for article in articles %}
+                <div class="animate-box" data-animate-effect="fadeInLeft">
+                    <a href="{{ SITEURL }}/{{ article.url }}"><h2>{{ article.title }}</h2></a>
+                    <div>{{ _('by') }}
+                        {% for author in article.authors %}
+                            <a href="{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %} - {{ article.locale_date }}
+                    </div>
+                    {{ article.summary }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,3 +1,17 @@
+/* General overwrides */
+h2 {
+    font: 200 26px/1.7 Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+a:hover h2 {
+    color: #228896;
+}
+
+.archive h2 {
+    margin-bottom: 4px;
+}
+
 /* about */
 .about-image {
     width: 100px;

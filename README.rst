@@ -20,6 +20,5 @@ Additional Article Option
 
 
 TODO
-- pagination (only on index, so its not really needed with only 4 lates articles)
 - archives page
-- form
+- ads (even if i dont like them)

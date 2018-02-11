@@ -102,21 +102,8 @@
 
     {% block custom_js %}{% endblock %}
 
-
-
     <!-- MAIN JS -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
-
-
-<script>
-    jQuery(document).ready(function() {
-         jQuery('#tipue_search_input').tipuesearch({
-             'show': 10,
-             'mode': 'json',
-             'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
-         });
-    });
-</script>
     </body>
 </html>
 

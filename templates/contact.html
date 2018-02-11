@@ -107,6 +107,8 @@
 {% endblock %}
 
 {% block custom_js %}
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+  {% if GOOGLE_MAPS_KEY %}
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ GOOGLE_MAPS_KEY }}&sensor=false"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/google_map.js"></script>
+  {% endif %}
 {% endblock %}
