@@ -7,19 +7,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Marble Theme 0.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-06 22:27+0100\n"
+"POT-Creation-Date: 2018-02-11 21:23+0100\n"
 "PO-Revision-Date: 2018-02-10 22:31+0100\n"
+"Last-Translator: \n"
 "Language: fr_FR\n"
 "Language-Team: fr_FR <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.0.5\n"
 
-#: templates/article.html:16 templates/partial/articleTeaser.html:8
+#: templates/archives.html:3 templates/archives.html:5
+#: templates/archives.html:10
+msgid "Archive"
+msgstr "Archiver"
+
+#: templates/archives.html:15 templates/article.html:16
+#: templates/partial/articleTeaser.html:8
 msgid "by"
 msgstr "de"
 
@@ -33,7 +38,7 @@ msgstr "Auteurs"
 msgid "Categories"
 msgstr "Catégories"
 
-#: templates/categories.html:16
+#: templates/categories.html:16 templates/tags.html:16
 msgid "articles"
 msgstr "articles"
 
@@ -41,35 +46,39 @@ msgstr "articles"
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/contact.html:49 templates/partial/about.html:7
+#: templates/contact.html:65 templates/partial/about.html:7
 msgid "Get in touch"
 msgstr "Entrer en contact"
 
-#: templates/contact.html:59
+#: templates/contact.html:75
 msgid "Name"
 msgstr "Nom"
 
-#: templates/contact.html:62
+#: templates/contact.html:76
+msgid "Lastname"
+msgstr "Nom de famille"
+
+#: templates/contact.html:79
 msgid "Email"
 msgstr "Email"
 
-#: templates/contact.html:65
+#: templates/contact.html:82
 msgid "Phone"
 msgstr "Téléphone"
 
-#: templates/contact.html:70
+#: templates/contact.html:87
 msgid "Message"
 msgstr "Message"
 
-#: templates/contact.html:73
+#: templates/contact.html:90
 msgid "Send"
 msgstr "Envoyer"
 
-#: templates/contact.html:81
+#: templates/contact.html:96
 msgid "Please fix the issues, all inputs are mandatory."
 msgstr "Veuillez corriger les problèmes, toutes les entrées sont obligatoires."
 
-#: templates/contact.html:82
+#: templates/contact.html:97
 msgid "Thank you for your message, we will respond as soon as possible."
 msgstr "Merci pour votre message, nous vous répondrons dans les plus brefs délais."
 
@@ -87,7 +96,7 @@ msgstr "Résultats de la recherche"
 msgid "Tags"
 msgstr "Tags"
 
-#: templates/partial/about.html:33
+#: templates/partial/about.html:38
 msgid "Contact me"
 msgstr "Contactez moi"
 
@@ -99,11 +108,11 @@ msgstr "Lire la suite"
 msgid "Comments"
 msgstr "Commentaires"
 
-#: templates/partial/disqus.html:17
+#: templates/partial/disqus.html:20
 msgid "Please enable JavaScript to view the comments powered by Disqus."
 msgstr "S'il vous plaît activer JavaScript pour afficher les commentaires alimentés par Disqus."
 
-#: templates/partial/latest.html:2
+#: templates/partial/latest.html:3
 msgid "Recent articles"
 msgstr "Articles récents"
 
@@ -115,6 +124,7 @@ msgstr "Home"
 msgid "Misc"
 msgstr "Divers"
 
-#: templates/partial/pages.html:3
+#: templates/partial/pages.html:4
 msgid "Pages overview"
 msgstr "Aperçu des pages"
+

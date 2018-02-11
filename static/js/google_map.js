@@ -12,8 +12,7 @@ function init() {
     // Create the Google Map using out element and options defined above
     
     if (address) {
-
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+address+'&sensor=false', null, function (data) {
+        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+address, null, function (data) {
 
             if (! data.results[0]) {
                 return;
@@ -40,6 +39,11 @@ function init() {
             });
 
         });
+    } else {
+        alert('no address');
     }
 }
-google.maps.event.addDomListener(window, 'load', init);
+
+$(function(){
+    init();
+});

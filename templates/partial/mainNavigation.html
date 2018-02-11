@@ -31,9 +31,9 @@
 
     <!-- additional menu items from config -->
     {% if MENUITEMS %}
-        <li class="nav-title">{{ _('Misc') }}</li>
+        <!-- <li class="nav-title">{{ _('Misc') }}</li> -->
         {% for item in MENUITEMS %}
-            <li{% if output_file == item.1 %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ item.1 }}">{{ item.0 }}</a></li>
+            <li{% if output_file == item.1 %} class="fh5co-active"{% endif %}><a href="{{ SITEURL }}/{{ item.1 }}">{{ _(item.0) }}</a></li>
         {% endfor %}
     {% endif %}
 
