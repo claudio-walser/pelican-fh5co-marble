@@ -27,7 +27,12 @@
                                 {% endif %}
 
                                 {% if 'text' in ABOUT %}
-                                    <p>{{ ABOUT.text }}</p>
+                                    {% if ABOUT.text is string %}
+                                        <p>{{ ABOUT.text }}</p>
+                                    {% elif DEFAULT_LANG in ABOUT.text %}
+                                        <p>{{ ABOUT.text[DEFAULT_LANG] }}</p>
+                                    {% endif %}
+
                                 {% endif %}
                                 {% if 'link' in ABOUT %}
                                     <p><a href="{{ SITEURL }}/{{ ABOUT.link }}" class="btn btn-primary">{{ _('Contact me') }}</a></p>

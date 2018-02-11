@@ -95,3 +95,14 @@
 .error {
   border: 2px solid #990000 !important;
 }
+
+/* laguage navigation */
+.language-navigation li a {
+  color: #aaa !important;
+}
+.language-navigation li a.lang-active, .language-navigation li a:hover {
+  color: #000 !important;
+}
+.language-navigation li a:hover:after {
+  visibility: hidden !important;
+}

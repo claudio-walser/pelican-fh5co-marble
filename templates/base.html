@@ -57,12 +57,17 @@
     <div id="fh5co-page">
         <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
         <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+            <nav class="fh5co-main-menu" role="navigation">
+                {% include 'partial/languages.html' %}
+            </nav>
+            <div class="clearfix"></div>
             <h1  id="fh5co-logo">
                 <a href="index.html">
                     <img src="{{ LOGO }}" />
                 </a>
             </h1>
-            <nav id="fh5co-main-menu" role="navigation">
+            <nav class="fh5co-main-menu" role="navigation">
                 {% include 'partial/mainNavigation.html' %}
                 {% if 'tipue_search' in PLUGINS %}
                     {% include 'partial/search.html' %}

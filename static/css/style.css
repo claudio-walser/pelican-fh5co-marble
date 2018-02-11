@@ -155,22 +155,22 @@ figure figcaption {
   font-weight: 300;
   color: rgba(0, 0, 0, 0.5);
 }
-#fh5co-aside #fh5co-main-menu ul {
+#fh5co-aside .fh5co-main-menu ul {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-aside #fh5co-main-menu ul {
+  #fh5co-aside .fh5co-main-menu ul {
     margin: 0 0 2em 0;
   }
 }
-#fh5co-aside #fh5co-main-menu ul li {
+#fh5co-aside .fh5co-main-menu ul li {
   margin: 0 0 20px 0;
   padding: 0;
   list-style: none;
 }
-#fh5co-aside #fh5co-main-menu ul li a {
+#fh5co-aside .fh5co-main-menu ul li a {
   color: rgba(0, 0, 0, 0.9);
   text-decoration: none;
   letter-spacing: .1em;
@@ -185,7 +185,7 @@ figure figcaption {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#fh5co-aside #fh5co-main-menu ul li a:after {
+#fh5co-aside .fh5co-main-menu ul li a:after {
   content: "";
   position: absolute;
   height: 2px;
@@ -205,11 +205,11 @@ figure figcaption {
   -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-#fh5co-aside #fh5co-main-menu ul li a:hover {
+#fh5co-aside .fh5co-main-menu ul li a:hover {
   text-decoration: none;
   color: black;
 }
-#fh5co-aside #fh5co-main-menu ul li a:hover:after {
+#fh5co-aside .fh5co-main-menu ul li a:hover:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
@@ -217,10 +217,10 @@ figure figcaption {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
-#fh5co-aside #fh5co-main-menu ul li.fh5co-active a {
+#fh5co-aside .fh5co-main-menu ul li.fh5co-active a {
   color: black;
 }
-#fh5co-aside #fh5co-main-menu ul li.fh5co-active a:after {
+#fh5co-aside .fh5co-main-menu ul li.fh5co-active a:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);

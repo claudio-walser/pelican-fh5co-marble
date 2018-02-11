@@ -1,0 +1,9 @@
+<ul class="language-navigation">
+    <li>
+    {% if lang_siteurls %}
+        {% for lang, url in lang_siteurls.items() %}
+            <a{% if lang == DEFAULT_LANG %} class="lang-active"{% endif %} href="{{ url }}/">{{ lang }}</a>
+        {% endfor %}
+    {% endif %}
+    </li>
+</ul>
