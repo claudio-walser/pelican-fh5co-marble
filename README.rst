@@ -134,3 +134,17 @@ https://creativecommons.org/licenses/by/3.0/
 
 
 .. _Issues List: https://github.com/claudio-walser/pelican-fh5co-marble/issues
+
+
+
+Screenshots
+-----------
+
+.. image:: screenshot-home.png
+    :width: 100%
+
+.. image:: screenshot-home-2.png
+    :width: 100%
+
+.. image:: screenshot-contact.png
+    :width: 100%
