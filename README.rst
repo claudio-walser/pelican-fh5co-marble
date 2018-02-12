@@ -61,6 +61,7 @@ Translations
 
 Pull Request with more translations are very welcome.
 Languages in the theme right now
+
 - English
 - German
 - French (done with google translate)
