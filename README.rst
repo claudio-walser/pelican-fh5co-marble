@@ -56,6 +56,31 @@ Credits
 - And thanks to Alexandre Vicenzi, creator of the great Flex theme for many impressions and how to's https://github.com/alexandrevicenzi/Flex
 
 
+Translations
+------------
+
+Pull Request with more translations are very welcome.
+Languages in the theme right now
+- English
+- German
+- French (done with google translate)
+- Spanish (done with google translate)
+
+To create a new language, execute translations.sh
+
+.. code:: console
+
+    ./translations.sh new ru_RU
+
+Then translate the strings in ./locale/ru_RU/LC_MESSAGES/messages.po
+Afterwards call translations.sh with compile
+
+.. code:: console
+    
+    -/translations.sh compile
+
+Again, thanks to Alexandre Vicenzi because I copied his script.
+
 
 Issues or feature-requests
 --------------------------
