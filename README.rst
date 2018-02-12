@@ -32,6 +32,7 @@ Plugins
 - https://github.com/getpelican/pelican-plugins/tree/master/tipue_search
 
 
+
 Example blog
 ------------
 
@@ -49,11 +50,36 @@ Then visit http://localhost:8081 with your browser.
 
 
 
+Contact Form
+------------
+
+To get the contact form working, you need to change SMTP Login values in output/theme/mail-config.php
+For security reasons, NEVER check in this file anywhere but replace values in the output folder of your Pelican Blog manually or by script.
+Personally I build my pelican sites using jenkins and there i have a build step which is replacing SMTP Login values after the pelican build.
+
+.. code:: php
+
+    <?php
+
+    define('SMTP_SERVER', 'mail.your-domain.com');
+    define('SMTP_PORT', 587); # usually, only smtp over tls is supported
+    define('SMTP_REALNAME', 'John Doe');
+    define('SMTP_USER', 'john.doe@your-domain.com');
+    define('SMTP_PASS', 'secret');
+
+    define('RECEIPIENT', 'john.doe@your-domain.com');
+    define('RECEIPIENT_REALNAME', 'John Doe');
+
+    ?>
+
+
+
 Credits
 -------
 - Layout by https://freehtml5.co/
 - Example Images by David Kaplan http://www.kplan.ch/
 - And thanks to Alexandre Vicenzi, creator of the great Flex theme for many impressions and how to's https://github.com/alexandrevicenzi/Flex
+
 
 
 Translations
@@ -81,6 +107,7 @@ Afterwards call translations.sh with compile
     ./translations.sh compile
 
 Again, thanks to Alexandre Vicenzi because I copied his script.
+
 
 
 Issues or feature-requests
