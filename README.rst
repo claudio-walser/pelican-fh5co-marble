@@ -26,6 +26,12 @@ Todo's for later version
 
 
 
+Plugins
+-------
+- https://github.com/getpelican/pelican-plugins/tree/master/i18n_subsites
+- https://github.com/getpelican/pelican-plugins/tree/master/tipue_search
+
+
 Example blog
 ------------
 
