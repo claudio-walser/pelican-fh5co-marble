@@ -133,4 +133,4 @@ License
 https://creativecommons.org/licenses/by/3.0/
 
 
-.. _Issues List: https://github.com/claudio-walser/pelican-fh5co-marble-example/issues
+.. _Issues List: https://github.com/claudio-walser/pelican-fh5co-marble/issues
