@@ -1,4 +1,8 @@
 /* General overwrides */
+h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
 h2 {
     font: 200 26px/1.7 Roboto, sans-serif;
     text-transform: uppercase;
@@ -6,6 +10,10 @@ h2 {
 }
 a:hover h2 {
     color: #228896;
+}
+
+h3 {
+  margin: 30px 0 5px 0;
 }
 
 .archive h2 {
@@ -129,13 +137,18 @@ a:hover h2 {
 
 /* content styling */
 
-.float-left {
-  float: left;
-}
-.float-right {
-  float: right;
-}
-
 .page-content .container, .article-content .container {
   width: auto !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+}
+
+.container.float-left {
+  float: left;
+  padding-right: 15px;
+}
+.container.float-right {
+  float: right;
+  padding-left: 15px;
 }
