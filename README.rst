@@ -78,7 +78,7 @@ Afterwards call translations.sh with compile
 
 .. code:: console
     
-    -/translations.sh compile
+    ./translations.sh compile
 
 Again, thanks to Alexandre Vicenzi because I copied his script.
 
