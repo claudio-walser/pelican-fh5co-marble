@@ -36,6 +36,7 @@ Example blog
 ------------
 
 You can find a fully working example under https://github.com/claudio-walser/pelican-fh5co-marble-example
+
 .. code:: console
 
     git clone https://github.com/claudio-walser/pelican-fh5co-marble.git
