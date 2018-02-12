@@ -125,3 +125,17 @@ a:hover h2 {
 .language-navigation li a:hover:after {
   visibility: hidden !important;
 }
+
+
+/* content styling */
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.page-content .container, .article-content .container {
+  width: auto !important;
+}
