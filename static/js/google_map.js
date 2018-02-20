@@ -12,7 +12,7 @@ function init() {
     // Create the Google Map using out element and options defined above
     
     if (address) {
-        $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+address, null, function (data) {
+        $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address='+address, null, function (data) {
 
             if (! data.results[0]) {
                 return;
