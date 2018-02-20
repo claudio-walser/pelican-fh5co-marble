@@ -20,6 +20,10 @@ h3, h4, h5, h6 {
     margin-bottom: 4px;
 }
 
+#fh5co-hero .flexslider .flex-control-nav {
+    bottom: 60px;
+}
+
 /* about */
 .about-image {
     width: 100px;
