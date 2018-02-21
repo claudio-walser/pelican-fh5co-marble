@@ -7,7 +7,6 @@ $response = array(
 	'fields' => array(
 		'name' => 'error',
 		'email' => 'error',
-		'phone' => 'error',
 		'message' => 'error'
 	),
 	'sent' => 'error'
@@ -31,7 +30,6 @@ function sendForm($data) {
 
 <b>Name:</b><blockquote>" . utf8_decode($data['name']) . "</blockquote>
 <b>Email:</b><blockquote>" . utf8_decode($data['email']) . "</blockquote>
-<b>Phone:</b><blockquote>" . utf8_decode($data['phone']) . "</blockquote>
 <b>Message:</b><blockquote>" . utf8_decode($data['message']) . "</blockquote>";
 
 	try {
@@ -68,9 +66,6 @@ if (!empty($_POST) && (isset($_POST['lastname']) && empty($_POST['lastname']))) 
 	}
 	if (emailIsValid($_POST['email'])) {
 		$response['fields']['email'] = 'ok';
-	}
-	if (numberIsValid($_POST['phone'])) {
-		$response['fields']['phone'] = 'ok';
 	}
 	if (stringIsValid($_POST['message'])) {
 		$response['fields']['message'] = 'ok';
