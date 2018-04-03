@@ -21,7 +21,6 @@ Todo's for later version
 ------------------------
 
 - ADs
-- Google Analytics
 - Facebook/Twitter share
 
 
