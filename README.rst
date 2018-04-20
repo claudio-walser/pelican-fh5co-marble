@@ -66,8 +66,8 @@ Personally I build my pelican sites using jenkins and there i have a build step 
     define('SMTP_USER', 'john.doe@your-domain.com');
     define('SMTP_PASS', 'secret');
 
-    define('RECEIPIENT', 'john.doe@your-domain.com');
-    define('RECEIPIENT_REALNAME', 'John Doe');
+    define('RECIPIENT', 'john.doe@your-domain.com');
+    define('RECIPIENT_REALNAME', 'John Doe');
 
     ?>
 
