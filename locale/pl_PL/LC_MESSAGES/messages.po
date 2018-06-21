@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: Piotr Przymus <piotr.przymus@gmail.com>\n"
 "Language: pl_PL\n"
 "Language-Team: pl_PL <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=3;  plural=n==1 ? 0 :  n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,7 +40,9 @@ msgstr "Kategorie"
 
 #: templates/categories.html:16 templates/tags.html:16
 msgid "articles"
-msgstr "artykułów"
+msgstr[1] "artykuł"
+msgstr[2] "artykuły"
+msgstr[5] "artykułów"
 
 #: templates/contact.html:3
 msgid "Contact"
@@ -110,7 +112,7 @@ msgstr "Komentarze"
 
 #: templates/partial/disqus.html:20
 msgid "Please enable JavaScript to view the comments powered by Disqus."
-msgstr "Please enable JavaScript to view the comments powered by Disqus."
+msgstr "Proszę włącz JavaScript żeby zobaczyć komentarze w Disqus."
 
 #: templates/partial/latest.html:3
 msgid "Recent articles"
