@@ -91,6 +91,7 @@ Languages in the theme right now
 - German
 - French (done with google translate)
 - Spanish (done with google translate)
+- Polish (credits go to https://github.com/przymusp)
 
 To create a new language, execute translations.sh
 
