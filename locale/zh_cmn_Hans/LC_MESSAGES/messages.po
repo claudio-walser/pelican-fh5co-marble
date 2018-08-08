@@ -1,0 +1,129 @@
+# English (United States) translations for Marble Theme.
+# Copyright (C) 2018 Claudio Walser
+# This file is distributed under the same license as the Marble Theme project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Marble Theme 0.1.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-02-11 21:23+0100\n"
+"PO-Revision-Date: 2018-02-06 22:10+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en_US\n"
+"Language-Team: en_US <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: templates/archives.html:3 templates/archives.html:5
+#: templates/archives.html:10
+msgid "Archive"
+msgstr "Archive"
+
+#: templates/archives.html:15 templates/article.html:16
+#: templates/partial/articleTeaser.html:8
+msgid "by"
+msgstr "by"
+
+#: templates/authors.html:5 templates/authors.html:10
+msgid "Authors"
+msgstr "Authors"
+
+#: templates/categories.html:2 templates/categories.html:5
+#: templates/partial/mainNavigation.html:14
+#: templates/partial/mainNavigation.html:19
+msgid "Categories"
+msgstr "Categories"
+
+#: templates/categories.html:16 templates/tags.html:16
+msgid "articles"
+msgstr "articles"
+
+#: templates/contact.html:3
+msgid "Contact"
+msgstr "Contact"
+
+#: templates/contact.html:65 templates/partial/about.html:7
+msgid "Get in touch"
+msgstr "Get in touch"
+
+#: templates/contact.html:75
+msgid "Name"
+msgstr "Name"
+
+#: templates/contact.html:76
+msgid "Lastname"
+msgstr "Lastname"
+
+#: templates/contact.html:79
+msgid "Email"
+msgstr "Email"
+
+#: templates/contact.html:82
+msgid "Phone"
+msgstr "Phone"
+
+#: templates/contact.html:87
+msgid "Message"
+msgstr "Message"
+
+#: templates/contact.html:90
+msgid "Send"
+msgstr "Send"
+
+#: templates/contact.html:96
+msgid "Please fix the issues, all inputs are mandatory."
+msgstr "Please fix the issues, all inputs are mandatory."
+
+#: templates/contact.html:97
+msgid "Thank you for your message, we will respond as soon as possible."
+msgstr "Thank you for your message, we will respond as soon as possible."
+
+#: templates/search.html:3 templates/search.html:5
+msgid "Search"
+msgstr "Search"
+
+#: templates/search.html:10
+msgid "Search results"
+msgstr "Search results"
+
+#: templates/partial/mainNavigation.html:24
+#: templates/partial/mainNavigation.html:29 templates/tags.html:2
+#: templates/tags.html:5
+msgid "Tags"
+msgstr "Tags"
+
+#: templates/partial/about.html:38
+msgid "Contact me"
+msgstr "Contact me"
+
+#: templates/partial/articleTeaser.html:10
+msgid "Read more"
+msgstr "Read more"
+
+#: templates/partial/disqus.html:3
+msgid "Comments"
+msgstr "Comments"
+
+#: templates/partial/disqus.html:20
+msgid "Please enable JavaScript to view the comments powered by Disqus."
+msgstr "Please enable JavaScript to view the comments powered by Disqus."
+
+#: templates/partial/latest.html:3
+msgid "Recent articles"
+msgstr "Recent articles"
+
+#: templates/partial/mainNavigation.html:3
+msgid "Home"
+msgstr "Home"
+
+#: templates/partial/mainNavigation.html:34
+msgid "Misc"
+msgstr "Misc"
+
+#: templates/partial/pages.html:4
+msgid "Pages overview"
+msgstr "Pages overview"
