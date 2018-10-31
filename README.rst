@@ -92,6 +92,7 @@ Languages in the theme right now
 - French (done with google translate)
 - Spanish (done with google translate)
 - Polish (credits go to https://github.com/przymusp)
+- Italian (credits go to https://github.com/aleppax)
 
 To create a new language, execute translations.sh
 
