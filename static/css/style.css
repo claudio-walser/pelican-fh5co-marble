@@ -125,7 +125,7 @@ figure figcaption {
 
 
 #fh5co-aside #fh5co-logo img {
-  width: 150px;
+  width: 300px;
 }
 
 #fh5co-aside #fh5co-logo a {
@@ -133,7 +133,7 @@ figure figcaption {
 }
 
 #fh5co-aside #fh5co-logo img {
-  border-radius: 50%;
+  /*border-radius: 50%;*/
 
 }
 @media screen and (max-width: 768px) {
@@ -185,7 +185,7 @@ figure figcaption {
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: #228896;
+  background-color: #FF0000;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -286,6 +286,8 @@ figure figcaption {
   }
 }
 #fh5co-main .fh5co-narrow-content {
+  /*display: flex;
+  flex-direction: column;*/
   position: relative;
   width: 93%;
   margin: 0 auto;
@@ -294,6 +296,8 @@ figure figcaption {
 }
 @media screen and (max-width: 768px) {
   #fh5co-main .fh5co-narrow-content {
+    /*display: flex;
+    flex-direction: column;*/
     width: 100%;
     padding: 4em 1em;
   }
