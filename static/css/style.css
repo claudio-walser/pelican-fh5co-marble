@@ -94,6 +94,7 @@ figure figcaption {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  background-color: #EEEEEE;
 }
 #fh5co-aside::-webkit-scrollbar { 
     display: none; 
@@ -286,8 +287,6 @@ figure figcaption {
   }
 }
 #fh5co-main .fh5co-narrow-content {
-  /*display: flex;
-  flex-direction: column;*/
   position: relative;
   width: 93%;
   margin: 0 auto;
@@ -296,8 +295,6 @@ figure figcaption {
 }
 @media screen and (max-width: 768px) {
   #fh5co-main .fh5co-narrow-content {
-    /*display: flex;
-    flex-direction: column;*/
     width: 100%;
     padding: 4em 1em;
   }
