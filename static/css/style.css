@@ -352,9 +352,15 @@ figure figcaption {
 #fh5co-hero .flexslider .flex-control-nav li a {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: none;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero .flexslider .flex-control-nav li a {
+    width: 24px;
+    height: 24px;
+  }
 }
 #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
