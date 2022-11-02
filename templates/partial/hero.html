@@ -3,7 +3,7 @@
     <div class="flexslider js-fullheight">
         <ul class="slides">
             {% for hero in HERO %}
-                <li style="background-image: url({{ hero.image }});">
+                <li style="background-image: url({{ SITEURL}}{{ hero.image }});">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
