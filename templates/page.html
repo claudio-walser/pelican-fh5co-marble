@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    {% if DISQUS_ON_PAGES or page.use_disqus %}
+    {% if DISQUS_ON_PAGES|lower == "true" or page.use_disqus|lower == "true" %}
         {% include 'partial/disqus.html' %}
     {% endif %}
 
