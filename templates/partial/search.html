@@ -1,5 +1,12 @@
-<ul><li><form id="searchform" action="{{ SITEURL }}/search.html">
-    <input id="tipue_search_input" data-siteurl="{{ SITEURL }}" type="text" size="60" class="form-control search-field" name="q">
+<!-- Stork search -->
+<!--
+<link rel="stylesheet" href="https://files.stork-search.net/releases/v1.5.0/basic.css" />
+-->
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/stork.css" />
+<div class="stork-wrapper" style="margin-top: 50px">
+  <center>
+    <input data-stork="sitesearch" class="stork-input" style="width: 75%" placeholder="Search..."/>
+    <div data-stork="sitesearch-output" class="stork-output" style="text-transform: lowercase;"></div>
+  </center>
+</div>
 
-    <button type="submit" class="btn btn-primary search-submit"><i class="icon-search4"></i></button>
-</form></li></ul>

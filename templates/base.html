@@ -64,14 +64,13 @@
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS">
     {% endif %}
 
-
     </head>
     <body>
     <div id="fh5co-page">
         <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
         <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
-<!-- Disable the display of languages until we have translates for the pages
+<!-- Disable the display of languages until we have translations for the pages
             <nav class="fh5co-main-menu" role="navigation">
                 {% include 'partial/languages.html' %}
             </nav>
@@ -84,12 +83,11 @@
             </h1>
             <nav class="fh5co-main-menu" role="navigation">
                 {% include 'partial/mainNavigation.html' %}
-                {% if 'tipue_search' in PLUGINS %}
-                    {% include 'partial/search.html' %}
-                {% endif %}
-
             </nav>
 
+            {% if 'search' in PLUGINS %}
+                {% include 'partial/search.html' %}
+            {% endif %}
             {% include 'partial/social.html' %}
 
         </aside>
@@ -115,6 +113,13 @@
 
     <!-- MAIN JS -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/main.js"></script>
+
+    <!-- Stork scripts -->
+    <script src="https://files.stork-search.net/releases/v1.5.0/stork.js"></script>
+    <script>
+        stork.register("sitesearch", "{{ SITEURL }}/search-index.st")
+    </script>
+
     </body>
 </html>
 
