@@ -222,6 +222,10 @@ figure figcaption {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
+.fh5co-footer {
+  clear: both;
+  padding: 10px;
+}
 #fh5co-aside .fh5co-footer {
   position: absolute;
   bottom: 40px;
