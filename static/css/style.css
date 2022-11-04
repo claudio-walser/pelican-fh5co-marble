@@ -82,7 +82,7 @@ figure figcaption {
 }
 
 #fh5co-aside {
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 40px;
   width: 20%;
   position: fixed;
@@ -119,7 +119,7 @@ figure figcaption {
   text-align: center;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-transform: uppercase;
   font-size: 38px;
 }
