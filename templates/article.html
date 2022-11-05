@@ -34,6 +34,8 @@
         </div>
     </div>
 
-    {% include 'partial/disqus.html' %}
+    {% if DISQUS_ON_PAGES|lower == "true" or article.use_disqus|lower == "true" %}
+        {% include 'partial/disqus.html' %}
+    {% endif %}
 
 {% endblock %}
