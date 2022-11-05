@@ -13,7 +13,7 @@
     <div class="fh5co-narrow-content article-content">
         <h1 class="fh5co-heading-colored">{{ article.title }}</h1>
 
-        <div>{{ _('by') }}
+        <div>{{ _('Posted by') }}
             {% for author in article.authors %}
                 <a href="{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %} - {{ article.locale_date }}
