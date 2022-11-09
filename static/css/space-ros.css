@@ -1,0 +1,4 @@
+/* Makes the Read-More button responsive */
+.btn.btn-primary {
+  white-space: normal;
+}
