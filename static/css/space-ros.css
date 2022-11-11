@@ -1,4 +1,30 @@
 /* Makes the Read-More button responsive */
-.btn.btn-primary {
+.space-ros.btn.btn-primary {
   white-space: normal;
+  display: block;
+  margin-top: auto;
+}
+
+/* Article Teaser related styles - Makes the article list responsive using flexbox. */
+.space-ros.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-ros.blog-entry {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  float: none;
+}
+
+.space-ros.desc {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-top: 0;
+}
+
+.space-ros.desc h3 {
+  margin-top: 0;
 }
