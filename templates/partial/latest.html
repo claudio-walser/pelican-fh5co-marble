@@ -1,9 +1,10 @@
 {% if articles|length > 0 %}
-    <div class="fh5co-narrow-content">
+<div class="fh5co-narrow-content">
     <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">{{ _('Recent articles') }}</h2>
     <div class="row row-bottom-padded-md">
-        {% for article in articles[0:4] %}
-            {% include 'partial/articleTeaser.html' %}
-        {% endfor %}
+        {% with articles=articles[0:4] %}
+            {% include 'partial/flexArticleContainer' %}
+        {% endwith %}
     </div>
+</div>
 {% endif %}

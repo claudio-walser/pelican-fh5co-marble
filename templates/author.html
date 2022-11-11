@@ -10,9 +10,7 @@
         <h1 class="fh5co-heading-colored">{{ author }}</h1>
 
         <div class="animate-box" data-animate-effect="fadeInLeft">
-          {% for article in articles %}
-            {% include 'partial/articleTeaser.html' %}
-          {% endfor %}
+            {% include 'partial/flexArticleContainer' %}
         </div>
     </div>
 {% endblock %}
