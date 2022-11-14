@@ -81,7 +81,9 @@
             <h1 class="space-ros" id="fh5co-logo">
                 <a href="{{ SITEURL }}/index.html">
                     <picture>
+                        {% if LOGO_SMALL %}
                         <source srcset="{{ SITEURL }}/{{ LOGO_SMALL }}" media="(max-width: 992px)"/>
+                        {% endif %}
                         <source srcset="{{ SITEURL }}/{{ LOGO }}" media="(min-width: 993px)"/>
                         <img src="{{ SITEURL }}/{{ LOGO }}" />
                     </picture>

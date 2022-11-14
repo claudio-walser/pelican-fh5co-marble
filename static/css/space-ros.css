@@ -38,10 +38,11 @@
 #fh5co-aside #fh5co-logo.space-ros img {
   width: 100%;
   max-width: 300px;
+  max-height: 3em;
 }
 
 @media screen and (max-width: 992px) {
   #fh5co-aside #fh5co-logo.space-ros img {
-    max-width: 2em;
+    max-height: 2em;
   }
 }
