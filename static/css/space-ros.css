@@ -28,3 +28,20 @@
 .space-ros.desc h3 {
   margin-top: 0;
 }
+
+/* Responsive Logo */
+#fh5co-aside #fh5co-logo.space-ros {
+  background-color: #2c3553;
+  margin: 0 -1rem 30px;
+}
+
+#fh5co-aside #fh5co-logo.space-ros img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 992px) {
+  #fh5co-aside #fh5co-logo.space-ros img {
+    max-width: 2em;
+  }
+}
