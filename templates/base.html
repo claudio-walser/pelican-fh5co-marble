@@ -78,9 +78,15 @@
             </nav>
 -->
             <div class="clearfix"></div>
-            <h1  id="fh5co-logo">
+            <h1 class="space-ros" id="fh5co-logo">
                 <a href="{{ SITEURL }}/index.html">
-                    <img src="{{ SITEURL }}/{{ LOGO }}" />
+                    <picture>
+                        {% if LOGO_SMALL %}
+                        <source srcset="{{ SITEURL }}/{{ LOGO_SMALL }}" media="(max-width: 992px)"/>
+                        {% endif %}
+                        <source srcset="{{ SITEURL }}/{{ LOGO }}" media="(min-width: 993px)"/>
+                        <img src="{{ SITEURL }}/{{ LOGO }}" />
+                    </picture>
                 </a>
             </h1>
             <nav class="fh5co-main-menu" role="navigation">
