@@ -56,3 +56,16 @@
 #fh5co-hero .flexslider .slides .overlay {
   background: rgba(0, 0, 0, 0.4);
 }
+
+/* Colorize the Toggle button */
+.fh5co-nav-toggle i {
+  background: white;
+}
+
+.fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
+  background: white;
+}
+
+.fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
+  background: white;
+}
