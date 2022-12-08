@@ -46,3 +46,13 @@
     max-height: 2em;
   }
 }
+
+/* Hero-related changes to make the text stand out */
+#fh5co-hero.space-ros .flexslider .slider-text > .slider-text-inner h1,
+#fh5co-hero.space-ros .flexslider .slider-text > .slider-text-inner h2 {
+  text-shadow: 0 0 5px #333333;
+}
+
+#fh5co-hero .flexslider .slides .overlay {
+  background: rgba(0, 0, 0, 0.4);
+}
