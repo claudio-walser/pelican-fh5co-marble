@@ -1,9 +1,9 @@
 {% if HERO|length > 0 %}
-<aside id="fh5co-hero" class="js-fullheight">
+<aside id="fh5co-hero" class="js-fullheight space-ros">
     <div class="flexslider js-fullheight">
         <ul class="slides">
             {% for hero in HERO %}
-                <li style="background-image: url({{ SITEURL}}{{ hero.image }});">
+                <li style="background-image: url({{ SITEURL }}{{ hero.image }});">
                     <div class="overlay"></div>
                     <div class="container-fluid">
                         <div class="row">
@@ -16,7 +16,7 @@
                                             <h1>{{ hero.title[DEFAULT_LANG] }}</h1>
                                         {% endif %}
                                     {% endif %}
-                                    
+
                                     {% if 'text' in hero %}
                                         {% if hero.text is string %}
                                             <h2>{{ hero.text }}</h2>
@@ -24,7 +24,7 @@
                                             <h2>{{ hero.text[DEFAULT_LANG] }}</h2>
                                         {% endif %}
                                     {% endif %}
-                                    
+
                                     <p>
                                         {% for link in hero.links %}
                                             <a class="btn btn-primary" href="{{ link.url }}">
