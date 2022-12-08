@@ -58,6 +58,10 @@
 }
 
 /* Colorize the Toggle button */
+.fh5co-nav-toggle {
+  mix-blend-mode: difference;
+}
+
 .fh5co-nav-toggle i {
   background: white;
 }
