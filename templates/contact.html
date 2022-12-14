@@ -10,6 +10,12 @@
       <div class="fh5co-more-contact">
         <div class="fh5co-narrow-content">
           <div class="row">
+            <div class="col-md-4">
+              <h2 class="animate-box" data-animate-effect="fadeInLeft">{{ _('Get in touch') }}</h2>
+            </div>
+          </div>
+
+          <div class="row">
 
             {% if 'mail' in ABOUT %}
               <div class="col-md-4">
@@ -48,7 +54,7 @@
                   <i class="icon-phone"></i>
                 </div>
                 <div class="fh5co-text">
-                  <p><a href="tel://">{{ ABOUT.phone }}</a></p>
+                  <p><a href="tel:{{ ABOUT.phone }}">{{ ABOUT.phone }}</a></p>
                 </div>
               </div>
             </div>
