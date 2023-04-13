@@ -108,6 +108,15 @@
         </div>
     </div>
 
+    <!-- OSRF Google Analytics Tag -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EVD5Z6G6NH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'id=G-EVD5Z6G6NH');
+    </script>
+    
     <!-- jQuery -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
     <!-- jQuery Easing -->
@@ -129,6 +138,5 @@
     <script>
         stork.register("sitesearch", "{{ SITEURL }}/search-index.st")
     </script>
-
     </body>
 </html>
