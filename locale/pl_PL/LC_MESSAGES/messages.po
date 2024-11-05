@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Marble Theme 0.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-11 21:23+0100\n"
+"POT-Creation-Date: 2024-11-05 15:16+0200\n"
 "PO-Revision-Date: 2018-04-20 22:10+0100\n"
 "Last-Translator: Piotr Przymus <piotr.przymus@gmail.com>\n"
 "Language: pl_PL\n"
 "Language-Team: pl_PL <LL@li.org>\n"
-"Plural-Forms: nplurals=3;  plural=n==1 ? 0 :  n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 :  n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.16.0\n"
 
 #: templates/archives.html:3 templates/archives.html:5
 #: templates/archives.html:10
@@ -24,9 +24,20 @@ msgid "Archive"
 msgstr "Archiwum"
 
 #: templates/archives.html:15 templates/article.html:16
-#: templates/partial/articleTeaser.html:8
+#: templates/partial/articleTeaser.html:9
 msgid "by"
 msgstr "przez"
+
+#: templates/article.html:25 templates/partial/mainNavigation.html:24
+#: templates/partial/mainNavigation.html:29 templates/tags.html:2
+#: templates/tags.html:5
+msgid "Tags"
+msgstr "Tagi"
+
+#: templates/article.html:32
+#, fuzzy
+msgid "Reading time"
+msgstr "Więcej"
 
 #: templates/authors.html:5 templates/authors.html:10
 msgid "Authors"
@@ -40,9 +51,7 @@ msgstr "Kategorie"
 
 #: templates/categories.html:16 templates/tags.html:16
 msgid "articles"
-msgstr[1] "artykuł"
-msgstr[2] "artykuły"
-msgstr[5] "artykułów"
+msgstr "artykuł"
 
 #: templates/contact.html:3
 msgid "Contact"
@@ -92,17 +101,11 @@ msgstr "Wyszukaj"
 msgid "Search results"
 msgstr "Rezultaty wyszukiwania"
 
-#: templates/partial/mainNavigation.html:24
-#: templates/partial/mainNavigation.html:29 templates/tags.html:2
-#: templates/tags.html:5
-msgid "Tags"
-msgstr "Tagi"
-
 #: templates/partial/about.html:38
 msgid "Contact me"
 msgstr "Skontaktuj się ze mną"
 
-#: templates/partial/articleTeaser.html:10
+#: templates/partial/articleTeaser.html:11
 msgid "Read more"
 msgstr "Więcej"
 

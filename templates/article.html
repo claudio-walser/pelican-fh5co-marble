@@ -28,6 +28,9 @@
                 {% endfor %}
             </div>
         {% endif %}
+        <span dir="ltr">
+        {% if article.readtime_string %}{{ _('Reading time') }}: {{article.readtime_string_with_seconds}}{% endif %}
+        </span>
 
         <div class="animate-box" data-animate-effect="fadeInLeft">
             <p class="animate-box" data-animate-effect="fadeInLeft">{{ article.content }}</p>
