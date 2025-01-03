@@ -89,6 +89,7 @@ Languages in the theme right now
 
 - English
 - German
+- Hebrew (credits go to https://github.com/tsvi)
 - French (credits go to https://github.com/MaevaBrunelles)
 - Spanish (done with google translate)
 - Polish (credits go to https://github.com/przymusp)
